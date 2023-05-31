@@ -25,6 +25,11 @@ const App = () => {
     },
   ];
 
+  const addExpenseHandler = () => {
+    console.log("in App.js");
+    console.log(expenses);
+  };
+
   // return React.createElement(
   //   "div", //opening div
   //   {}, //attributes that should be set
@@ -33,10 +38,10 @@ const App = () => {
 
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
