@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 // useState allows us to define values as state where changes to the values are reflected within the js
 
 import ExpenseDate from "./ExpenseDate";
@@ -6,7 +6,6 @@ import Card from "../UI/Card";
 import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
-
   // const [title, setTitle] = useState(props.title); //useState always returns an array length 2 [0] is the old value, [1] is the updated function to return the new value
 
   // const clickHandler = () => {
